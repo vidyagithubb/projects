@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Edit User</h1>
+            <form action="/save_edit" method="post">
+                <div>
+                    <label>Sr. No.</label>
+                    <input type="text" name="srno" id="srno" value="<%= user.srno%>">
+                    <label>patient_Name</label>
+                    <input type="text" name="patient_name" id="patient_name" value="<%= user.patient_name%>">
+                    <label>Contactno</label>
+                    <input type="text" name="contactno" id="contactno" value="<%= user.contactno%>">
+                    <label>Email</label>
+                    <input type="text" name="email" id="email" value="<%= user.email%>">
+                    <label>department</label>
+                    <input type="text" name="department" id="department" value="<%= user.depatment%>">
+                    <label>Age</label>
+                    <input type="text" name="age" id="age" value="<%= user.age%>">
+                    
+                    <label>Address</label>
+                    <input type="text" name="address" id="address" value="<%= user.address%>">
+                    <button type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

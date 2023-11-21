@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>admin</title>
+	<style>
+.containertop{
+	
+	width: 100%;
+    background-color: #e9edf2;
+
+}
+
+*{
+	margin: 0px;
+	 padding: 0px; 
+}
+ .wrapper{
+ 	position: relative;
+ 	display:inline-block;
+	width: 1200px;
+	margin:auto;
+	z-index:3;
+
+}
+
+#topright{
+	float: right;
+	
+}
+
+#topsearch{
+	height: 20px;
+	border-radius: 5px;
+}
+
+#topbtn{
+	height: 20px;
+	border-radius: 5px;
+	width: 60px;
+	background-color: #24C28D;
+	font-weight: bold;
+}
+
+#makeapp{
+	width: 200px;
+	height: 30px;
+	font-size: 19px;
+	text-decoration: none;
+	display: block;
+	background-color: #FFD104;
+	text-align: center;
+	color: red;
+}
+
+#makeapp:hover{
+	background-color: #FFAF04   ;
+	color: black;
+}
+
+ul li{
+	
+	width: 170px;
+	display: inline-block;
+	height: 30px;
+	font-size: 20px;
+	
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+
+
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+
+
+.menubar{
+	width: 100%;
+    background-color: #0AA0C4;
+
+}
+
+
+ul li a:hover{
+	background-color: #FFC300 ;
+    color: black;
+}
+
+
+
+.pat_wrapper{
+	width: 530px;
+	height: 400px;
+	margin:auto;
+	font-size: 20px;
+	background-color: #bdc3c7;
+	margin-top: 25px;
+	border-radius: 5px;
+
+	padding: 10px;
+
+}
+
+
+.field  input{
+	width: 250px;
+	height: 20px;
+	padding: 5px;
+	margin-right: 10px;
+	border-radius: 5px;
+	margin-left: 30px;
+	border:1px solid silver;
+}
+
+
+.field  select{
+	width: 300px;
+	height: 50px;
+	padding: 5px;
+	margin-right: 10px;
+	border-radius: 5px;
+	margin-left: 30px;
+	border:1px solid silver;
+}
+
+.sub input{
+	width: 200px;
+	height:40px;
+	border-radius: 5px;
+	font-size: 20px;
+	border: 5px;
+	text-align: center;
+	margin-left: 150px;
+	background-color: #24C28D;
+	
+}
+
+
+#head{
+	text-align: center;
+}
+
+.docdetails{
+	height: 600px;
+	width: 500px;
+	background-color: black;
+	margin: auto;
+}
+  </style>
+</head>
+<body>
+
+<div class="containertop">
+  <div class="wrapper"> 
+    <div id="topright">
+      <h4>Contact Us:</h4>clinic@gmail.com<br>
+     111111/2222222/3333333<br>
+    <form>
+      <input id="topsearch" type="text" name="toptext">
+      <input id="topbtn" type="button" name="topbutton" value="Search">
+    </form>
+
+    
+
+    </div>
+
+
+
+    <div id="topleft">
+    <img src="6.jpg">
+      
+    </div>
+  </div> 
+</div>
+
+
+<div class="menubar"> 
+   <div class="wrapper">
+    <ul>
+    
+            <li><a href="admindetails.html">My Details</a></li>
+      <li><a href="admindocview.html">View Doctor</a></li>
+      <li><a href="adminappview.html">View Appointments</a></li>
+      <li><a href="adminfeedbackview.html">View Feedback</a></li>
+      <li><a href="adminreportview.html">View Reports</a></li>
+      <li><a href="patlogout.html">Logout</a></li>
+    </ul>
+  </div>
+</div>  
+
+
+<br>
+
+
+
+
+<form method="POST">
+
+<br></br>
+<div  style="height: 200px;width: 700px;background-color: #bdc3c7;margin: auto; "><br>
+<label style="margin-left: 100px;font-size: 25px;color: #1545DC; ">Doctors according to number of appointments</label> <br><br>
+<input style="font-size: 15px;margin-left: 160px; " type="date" name="fdate"> To 
+<input style="font-size: 15px; " type="date" name="ldate">&nbsp<br><br><br>
+<input style="margin-left: 250px;background-color: #11A278;height: 40px;width: 150px;font-size: 25px;border-radius: 10px; " type="submit" name="docsub">
+</div>
+ 
+<table style="margin-left: 270px;font-size: 20px;" width="800"  border="1" cellpadding="1" cellspacing="1">
+<tr style="background-color: #FFD104  ;color: red; ">
+  
+  <th>Doctor Id</th>
+  <th>Doctor Name</th>
+  <th>Department</th>
+  <th>No. of Appointments</th>
+  
+
+</tr>
+</table>
+
+
+<br></br><br></br>
+
+<div  style="height: 200px;width: 700px;background-color: #bdc3c7;margin: auto; "><br>
+  <label style="margin-left: 100px;font-size: 25px;color: #1545DC; ">Departments according to the number of appointment</label>
+  <br> <br>
+  <input style="font-size: 15px;margin-left: 160px; " type="date" name="deptf"> To 
+  <input style="font-size: 15px; " type="date" name="deptl">&nbsp<br><br><br>
+  <input style="margin-left: 250px;background-color: #11A278;height: 40px;width: 150px;font-size: 25px;border-radius: 10px; " type="submit" name="depsub">
+  <br><br>
+</div>
+
+
+<table style="margin-left: 370px;font-size: 20px;" width="600"  border="1" cellpadding="1" cellspacing="1">
+<tr style="background-color: #FFD104  ;color: red; ">
+  
+  
+  <th>Department</th>
+  <th>No. of Appointments</th>
+  
+
+</tr>
+
+   <?php 
+   if ($result_dept)
+    {
+     
+
+  while ($show_data=mysql_fetch_assoc($result_dept)) {
+    echo "<tr>";
+
+    //echo "<td>".$show_data['doc_id']."</td>";
+    //echo "<td>".$show_data['doc_name']."</td>";
+    echo "<td>".$show_data['dept']."</td>";
+    echo "<td align=center>".$show_data['dd']."</td>";
+
+    echo "</tr>";
+
+
+  }
+
+}
+   ?>
+
+</table>
+
+
+
+
+
+
+
+
+
+<footer style="height: 300px;width: 100%;background-color: #35342F;margin-top: 100px; ">
+	<div style="height: 240px;width: 100%; " ><br>
+		<div style="height: 200px;width: 1200px;margin-left: 60px;  ">
+			<div style="height: 200px;width: 300px;float: left; ">
+				<p style="font-size: 20px;color: #F1BF04; ">Quick Navigation</p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="aboutus.html">About Us</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="patient_registration.html">Make Appointment</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="help.html">Contact Us</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="feedback.html">Feedback</a> </p>
+
+			</div>
+			<div style="height: 200px;width: 300px;float: left; ">
+				<p style="font-size: 20px;color: #F1BF04; ">Related Links</p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="https://www.aiimsexams.org/">AIIMS</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="http://www.cmch-vellore.edu/">CMC Vellore</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="http://www.allindiadrug.in/">All India Drug Supply Co.</a> </p>
+			</div>
+			<div style="height: 200px;width: 300px;float: left; ">
+				<p style="font-size: 21px;color: #F1BF04; "> Medical Clinic</p><br>
+				<p style="color: #fff;font-size: 15px;font-family: arial, helvetica; ">8B Gangadhar Benerjee lane,<br>25 Pally,Diamond Harbour Road,<br>Kolkata-700023<br>West Bengal. <br><br>clinic@gmail.com<br>1111111/ 2222222/ 3333333</p>
+
+				
+			</div>
+			<div style="height: 200px;width: 300px;float: left; ">
+				<p style="font-size: 20px;color: #F1BF04; ">Other Links</p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="cpyryts.html">Privacy Policy</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="faqs.html">FAQ</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="https://www.google.co.in/maps/place/St.+Thomas'+College+of+Engineering+and+Technology/@22.5387879,88.3267527,17z/data=!3m1!4b1!4m5!3m4!1s0x3a02775de26c3dfd:0xd7255ce261457bec!8m2!3d22.5387879!4d88.3289414">Map's & Direction's</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="developers.html">Developers</a> </p>
+				
+			</div>
+
+		</div>
+
+	</div>
+
+	<div style="height: 60px;width: 100%;background-color: #0F0D03; " >
+			<div style="margin-left: 20px; " >
+			
+			</div>
+
+		
+	</div>
+</footer>
+
+
+
+
+
+</body>
+</html>

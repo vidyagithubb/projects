@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dentistry</title>
+	<style>
+        .containertop{
+	
+	width: 100%;
+   background-color: #e9edf2;
+
+}
+
+*{
+	margin: 0px;
+	 padding: 0px;  
+}
+ .wrapper{
+ 	position: relative;
+ 	display:inline-block;
+	width: 1200px;
+	margin:auto;
+	z-index:3;
+
+}
+
+#topright{
+	float: right;
+	
+}
+
+#topsearch{
+	height: 20px;
+	border-radius: 5px;
+}
+
+#topbtn{
+	height: 20px;
+	border-radius: 5px;
+	width: 60px;
+	background-color: #24C28D;
+	font-weight: bold;
+}
+
+#makeapp{
+	width: 200px;
+	height: 30px;
+	font-size: 19px;
+	text-decoration: none;
+	display: block;
+	background-color: #FFD104;
+	text-align: center;
+	color: red;
+}
+
+#makeapp:hover{
+	background-color: #FFAF04   ;
+	color: black;
+}
+
+ul li{
+	
+	width: 170px;
+	display: inline-block;
+	height: 30px;
+	font-size: 20px;
+	
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+
+
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+
+}
+ul ul li a{
+	 background-color: #0AA0C4  ; 
+	  border-radius: 20px; 
+	 font-family: Courier New;
+
+}
+
+.menubar{
+	width: 100%;
+    background-color: #0AA0C4;
+
+}
+
+ul li a:hover{
+	background-color: #FFC300 ;
+    color: black;
+
+}
+   .pic{
+	
+	border:2px solid grey;
+	
+} 
+
+.banner{
+	width: 1340px;
+	height: 348px;
+	background-size: 100% 100%;
+	animation: banner 10s infinite;
+
+}
+
+@keyframes banner{
+	0%, 30%{
+		background-image: url(CMRI-Homepage-Slider01.jpg);
+	
+		opacity: 1;
+			}
+	31%,34%{
+		opacity: 0.1;
+	}
+	35%,65%{
+		background-image: url(CMRI-Homepage-Slider02.jpg);
+		opacity: 1;
+	}
+	66%,69%{
+		opacity: 0.1;
+	}
+	70%,100%{
+		opacity: 1;
+		background-image: url(CMRI-Homepage-Slider03.jpg);
+	}
+
+}
+
+.menubar ul ul
+{
+	position: absolute;
+	display: none;
+	z-index: 3;
+	padding: 0px;
+}
+
+.menubar ul li:hover > ul
+{
+	display: block;
+	z-index: 3;
+}
+
+.menubar ul ul ul{
+	margin-left: 170px;
+	top: 0px;
+}
+
+.abtus{
+	background-color: #FFC300;
+	height: 60px;
+	
+}
+
+#abthead{
+	margin-top: 10px;
+}
+.paraabtus{
+
+	width:1200px;
+	height: 550px;
+	margin: auto;
+	font-size: 20px;
+	
+	}
+
+.collage{
+	
+	margin-left: 250px;
+	margin-bottom: 40px;
+}
+
+
+    </style>
+</head>
+<body>
+
+	<div class="containertop">
+		<div class="wrapper"> 
+		   <div id="topright">
+		   <h4>Contact Us:</h4>clinic@gmail.com<br>
+		    111111/222222/333333<br>
+		   <form>
+		       <input id="topsearch" type="text" name="toptext">
+		       <input id="topbtn" type="button" name="topbutton" value="Search">
+		   </form>
+	   
+		   <br> <a id="makeapp" href="patient_registration.html"><strong>Get Appointment</strong></a>
+	   
+		   </div>
+	   
+	   
+	   
+		   <div id="topleft">
+		   <img src="1.jpg">
+		       
+		   </div>
+	       </div> 
+	   </div>
+	   
+	   
+	   
+	   <div class="menubar"> 
+		<div class="wrapper">
+		   <ul>
+		       <li><a href="home.html">Home</a></li>
+		       <li><a href="aboutus.html">About Us</a></li>
+		       
+			   <ul>
+			       <li><a>Doctors </a>
+				<ul>
+				   <li><a href="doctor_registration.html">Sign Up</a></li>
+				   <li><a href="doctor_login.html">Sign In</a></li>
+				</ul>	
+			       </li>
+	   
+				
+	   
+			       <li><a>Admin</a>
+				 <ul>
+				   <li><a href="adminregistration.html">Sign Up</a></li>
+				   <li><a href="adminlogin.html">Sign In</a></li>
+				 </ul>
+			       </li>
+	   
+			   </ul>
+	   
+		       </li>
+		       <li><a>Specialities</a>
+			   <ul>
+			       <li><a href="generalmedicine.html">General </a></li>
+					   <li><a href="cardialogy.html">Cardiology(Heart)</a></li>
+					   <li><a href="dentistry.html">Dentistry(Dental)</a></li>
+					   <li><a href="dermatology.html">Dermatology(Skin)</a></li>
+					   <li><a href="neurology.html">Neurology(Nerves)</a></li>
+					   
+					   <li><a href="opthalmology.html">Opthalmology(Eye)</a></li>
+					   <li><a href="gynaecology.html">Gynaecology</a></li>
+					   <li><a href="paediatrics.html">Paediatrics(Children)</a></li>
+			   </ul>
+		       </li>	
+		       <li><a>Services </a>
+			   <ul>
+			       <li><a href="clinical.html">Clinical Services</a></li>
+			       <li><a href="bloodbank.html">Blood bank</a></li>
+			       <li><a href="pharma.html">Pharmacy</a></li>
+			       <li><a href="emergency.html">Emergency Services</a></li>
+			       <li><a href="labservices.html">Laboratory Services</a></li>
+			       <li><a href="support.html">Support Services</a></li>
+			       
+			   </ul>
+		       </li>
+		       <li><a href="help.html">Help</a></li>
+		       
+		   </ul>
+	       </div>
+	       
+	   </div> 
+	   
+	   
+	   
+	   
+	   
+	   
+	   <div class="about us">
+	       
+	       <img src='c1.jpg'> 
+	   </div>
+	   
+	   
+	   <div class="abtus">
+	    <h2> <marquee> MEDICAL CLINIC </marquee></h2>
+	   </div>
+	   
+
+<br>
+<div class="paraabtus">
+<p><br>
+	Dentistry<br></br>
+Our skilled team at the Department of Dentistry and Maxillo-facial surgery includes paediatric dentists, orthodontists, endodontics, oral and maxillofacial surgery, prosthodontics and periodontics.<br></br>
+The department has been catering to the dental needs of its patients since its inception. Our services are rendered to children, teens, adults and even patients with special health care needs.<br></br>
+From common paediatric conditions like chipped tooth and overbites to more complex surgical treatments, our team of experts are equipped with years of experience to handle anything, with utmost care.<br></br>
+Backed by a post-op rehabilitation and care team, the Department of Dentistry and Maxillo-facial surgery has delivered millions of smiles over the years.<br></br>
+
+
+
+</p>
+</div>
+
+<div class="collage">
+<img src="den5.jpg">
+</div>
+<footer style="height: 300px;width: 100%;background-color: #35342F;margin-top: 100px; ">
+	<div style="height: 240px;width: 100%; " ><br>
+		<div style="height: 200px;width: 1200px;margin-left: 60px;  ">
+			<div style="height: 200px;width: 300px;float: left; ">
+				<p style="font-size: 20px;color: #F1BF04; ">Quick Navigation</p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="aboutus.html">About Us</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="patient_registration.html">Make Appointment</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="help.html">Contact Us</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="feedback.html">Feedback</a> </p>
+
+			</div>
+			<div style="height: 200px;width: 300px;float: left; ">
+				<p style="font-size: 20px;color: #F1BF04; ">Related Links</p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="https://www.aiimsexams.org/">AIIMS</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="http://www.cmch-vellore.edu/">CMC Vellore</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="http://www.allindiadrug.in/">All India Drug Supply Co.</a> </p>
+			</div>
+			<div style="height: 200px;width: 300px;float: left; ">
+				<p style="font-size: 21px;color: #F1BF04; "> Medical Clinic</p><br>
+				<p style="color: #fff;font-size: 15px;font-family: arial, helvetica; ">8B Gangadhar Benerjee lane,<br>25 Pally,Diamond Harbour Road,<br>Kolkata-700023<br>West Bengal. <br><br>clinic@gmail.com<br>1111111/ 2222222/ 3333333</p>
+
+				
+			</div>
+			<div style="height: 200px;width: 300px;float: left; ">
+				<p style="font-size: 20px;color: #F1BF04; ">Other Links</p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="cpyryts.html">Privacy Policy</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="faqs.html">FAQ</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="https://www.google.co.in/maps/place/St.+Thomas'+College+of+Engineering+and+Technology/@22.5387879,88.3267527,17z/data=!3m1!4b1!4m5!3m4!1s0x3a02775de26c3dfd:0xd7255ce261457bec!8m2!3d22.5387879!4d88.3289414">Map's & Direction's</a> </p><br>
+				<p><a style="color: #fff;text-decoration: none;font-family: arial, helvetica;font-size: 15px; " href="developers.html">Developers</a> </p>
+				
+			</div>
+
+		</div>
+
+	</div>
+
+	<div style="height: 60px;width: 100%;background-color: #0F0D03; " >
+			<div style="margin-left: 20px; " >
+			
+			</div>
+
+		
+	</div>
+</footer>
+
+
+
+
+
+</body>
+</html>

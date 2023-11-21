@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patient registraion</title>
+    <style>
+        body{
+	font-family: 'arial';
+	margin: 0;
+	padding: 0;
+	background-color: #3498db;
+}
+
+.pat_wrapper{
+	width: 530px;
+	height: 600px;
+	margin:auto;
+	font-size: 20px;
+	background-color: #fff;
+	margin-top: 25px;
+	border-radius: 5px;
+
+	padding: 10px;
+
+}
+.field  input{
+	width: 250px;
+	height: 20px;
+	padding: 5px;
+	margin-right: 10px;
+	border-radius: 5px;
+	margin-left: 30px;
+	border:1px solid silver;
+}
+.sub input{
+	width: 200px;
+	height:40px;
+	border-radius: 5px;
+	font-size: 20px;
+	border: 5px;
+	text-align: center;
+	margin-left: 150px;
+	background-color: #24C28D;
+	
+}
+.gender{
+	margin-left: 150px;
+}
+#head{
+	text-align: center;
+}
+
+#login{
+	width: 200px;
+	height: 30px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background-color: #FF1B04;
+	color: #fff ;
+	border-radius: 5px;
+}
+
+.loginbtn{
+	margin-left: 150px;
+}
+    </style>
+</head>
+<body style="background-image: url(ff.jpg); background-size: cover;margin-right: 400px; ">
+    <div class="pat_wrapper">
+      <h2 id="head">Patient Registration</h2>
+
+      <form class="pat_form" method="POST">
+        <p class="field">
+          <input type="text" name="pat_name" id="name" placeholder="Enter your  name" required>
+          <label for fname>Patient Name</label>
+        </p>
+
+        <p class="field">
+          <input type="text" name="pat_address" id="address" placeholder="Enter your address" required>
+          <label for lname>Address</label>
+        </p>
+
+        <p class="field">
+          <input type="date" name="pat_dob" id="dob"  max="<?php echo date("Y-m-d"); ?>" min="1950-01-01" required>
+          <label for dob>Date of Birth</label>
+        </p>
+
+        
+
+        <p class="field">
+          <input type="number" name="pat_phn" id="phn" max="9999999999" min="1000000000"  placeholder="+91">
+          <label for phn>Contact No</label>
+        </p>
+
+        <p class="field">
+          <input type="email" name="pat_mail" id="mail" placeholder="@gmail.com" required>
+          <label for mail>Mail Id</label>
+        </p>
+
+        <p class="field">
+          <input type="password" name="pat_pswd" id="pswd" minlength="4" placeholder="***********" required>
+          <label for pswd>Password</label>
+        </p>
+
+        <p class="field">
+          <input type="password" name="pat_repswd" id="repswd" placeholder="***********" required>
+          <label for pswd>Re-enter Password</label>
+        </p>
+
+        <p class="gender">
+          <input type="radio" name="pat_gender" id="gender" value="Male" required>Male
+          <input type="radio" name="pat_gender" id="gender" value="Female" required>Female
+        </p>
+
+        <p class="sub">
+          <input type="submit" name="sub" id="sub" value="Register Now" >
+          
+        </p>
+
+        <p class="loginbtn">
+          <a id="login" href="patient_login.html"> Already registered</a>
+        </p>
+
+      </form>
+        
+
+        <br>
+      <p style="color: blue; ">By signing up, you agree to our Basic Rules, Terms of Service, and Privacy Policy.</p>
+      <br>
+    </div>
+
+
+    <br></br>
+
+
+
+    
+</body>
+</html>

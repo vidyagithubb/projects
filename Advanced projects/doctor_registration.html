@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doctor registraion</title>
+<style>
+    body{
+	font-family: 'arial';
+	margin: 0;
+	padding: 0;
+	/*background-color: #3498db;*/
+
+}
+
+.doctor_wrapper{
+	/*width: 530px;*/
+	height: 700px;
+	
+	font-size: 20px;
+	background-color: #fff;
+	margin-top: 30px;
+	border-radius: 5px;
+
+	padding: 10px;
+
+}
+.field  input{
+	width: 250px;
+	height: 20px;
+	padding: 5px;
+	margin-right: 15px;
+	border-radius: 5px;
+	margin-left: 30px;
+	border:1px solid silver;
+}
+
+.field select{
+	width: 260px;
+	height: 20px;
+	padding: 5px;
+	margin-right: 15px;
+	border-radius: 5px;
+	margin-left: 30px;
+	border:1px solid silver;
+}
+
+
+.sub input{
+	width: 200px;
+	height:40px;
+	border-radius: 5px;
+	font-size: 20px;
+	border: 5px;
+	text-align: center;
+	margin-left: 150px;
+	background-color: #24C28D;
+	
+}
+/*.gender{
+	margin-left: 150px;
+}*/
+#head{
+	text-align: center;
+}
+</style>
+</head>
+<body style="background-image: url(kk.jpg)  ;
+  background-size: cover;">
+    <div style="width: 850px; margin-left: 450px; " class="doctor_wrapper">
+      <h2 id="head">Doctor Registration</h2>
+
+      <form class="doctor_form" method="POST">
+        <p class="field">
+          <label style="margin-left: 20px; " for name>Name</label>
+          <input style="width: 600px;margin-left: 50px; " type="text" name="doc_name" id="name" placeholder="Enter your name" required>
+        </p>
+
+        <p class="field">
+          <label style="margin-left: 20px; " for address>Address</label>
+          <input style="width: 600px; " type="text" name="doc_address" id="address" placeholder="Enter your address" required>
+          
+        </p>
+
+        <p class="field">
+          <label style="margin-left: 20px; " for dob>Date of Birth</label>
+          <input type="date" name="doc_dob" id="dob" required >
+          
+
+          <input style="width: 30px; " type="radio" name="doc_gender" id="gender" value="Male" required>Male
+          <input style="width: 30px; "  type="radio" name="doc_gender" id="gender" value="Female">Female
+      
+
+        </p>
+
+        
+          
+        
+
+        <label style="margin-left: 20px; " for docdept>Department</label>
+          <select  style="height: 30px ; width: 200px; " name="doc_dept" id="doc_dept" required>
+            <option selected="selected">select a department</option>
+            <option value='General Physician'>General </option>
+            <option value='Cardiology'>Cardiology</option>
+            <option value='Dentistry'>Dentistry</option>
+            <option value='Dermatology'>Dermatology</option>
+          
+            <option value='Neurology'>Neurology</option>
+            
+            <option value='Opthalmology'>Opthalmology</option>
+            <option value='Gynaecology'>Gynaecology</option>
+            <option value='Paediatrics'>Paediatrics</option>
+          </select>
+          
+        </p>
+
+        <p class="field">
+          <label style="margin-left: 20px; " for phn>Contact No</label>
+          <input style="width: 200px; " type="text" name="doc_phn" id="phn" placeholder="+91" required>
+          
+        
+          <label style="margin-left: 20px; " for mail>Mail Id</label>
+          <input type="email" name="doc_mail" id="mail" placeholder="abc@gmail.com" required>
+          
+        </p>
+
+        <p style="margin-left: 280px;color: #FF5733; ">Enter Your Visit Details:</p>
+
+        <p class ="field">
+          <label style="margin-left: 20px; " for day1>Day 1</label>
+          <select  style="height: 30px ; width: 150px; " name="day1">
+            <option selected="selected">first day of visit</option>
+            <option value='Monday'>Monday</option>
+            <option value='Tuesday'>Tuesday</option>
+            <option value='Wednesday'>Wednesday</option>
+            <option value='Thursday'>Thrusday</option>
+            <option value='Friday'>Friday</option>
+            <option value='Saturday'>Saturday</option>
+            
+          </select>
+        
+
+
+          <label style="margin-left: 20px; " for day1>Day 2</label>
+          <select  style="height: 30px ; width: 150px; " name="day2" >
+            <option selected="selected">second day of visit</option>
+            <option value='Monday'>Monday</option>
+            <option value='Tuesday'>Tuesday</option>
+            <option value='Wednesday'>Wednesday</option>
+            <option value='Thursday'>Thrusday</option>
+            <option value='Friday'>Friday</option>
+            <option value='Saturday'>Saturday</option>
+            
+          </select>
+        
+      
+          <label style="margin-left: 20px; " for day1>Day 3</label>
+          <select  style="height: 30px ; width: 150px; " name="day3" >
+            <option selected="selected">third day of visit</option>
+            <option value='Monday'>Monday</option>
+            <option value='Tuesday'>Tuesday</option>
+            <option value='Wednesday'>Wednesday</option>
+            <option value='Thursday'>Thrusday</option>
+            <option value='Friday'>Friday</option>
+            <option value='Saturday'>Saturday</option>
+            
+          </select>
+        </p>
+
+        <p class ="field">
+          <label style="margin-left: 20px; " for day1>TIME</label>
+          <select  style="height: 30px ; width: 150px; " name="timeslot1" >
+            <option selected="selected">Time of visit</option>
+            <option value='10:30-13:30'>10:30-13:30</option>
+            <option value='13:30-16:30'>13:30-16:30</option>
+            <option value='16:30-19:30'>16:30-19:30</option>
+            
+            
+          </select>
+
+          <label style="margin-left: 20px; " for day2>TIME</label>
+          <select  style="height: 30px ; width: 150px; " name="timeslot2" >
+            <option selected="selected">Time of visit</option>
+            <option value='10:30-13:30'>10:30-13:30</option>
+            <option value='13:30-16:30'>13:30-16:30</option>
+            <option value='16:30-19:30'>16:30-19:30</option>
+            
+          </select>
+
+          <label style="margin-left: 20px; " for day3>TIME</label>
+          <select  style="height: 30px ; width: 150px; " name="timeslot3" >
+            <option selected="selected">Time of visit</option>
+            <option value='10:30-13:30'>10:30-13:30</option>
+            <option value='13:30-16:30'>13:30-16:30</option>
+            <option value='16:30-19:30'>16:30-19:30</option>
+            
+            
+          </select>
+
+       </p>
+
+
+
+
+
+
+
+        <p class="field">
+          <label style="margin-left: 20px; " for pswd>Enter Password</label>
+          <input style="width: 170px; " type="password" name="doc_pswd" id="pswd" placeholder="***********">
+
+
+          <label style="margin-left: 20px; " for repswd>Re-enter Password</label>
+          <input style="width: 170px; " type="password" name="doc_repswd" id="repswd" placeholder="***********">
+          
+        </p>
+        <br>
+
+        <p style="margin-left: 180px; " class="sub">
+          <input  type="submit" name="sub" id="sub" value="Register Now" >
+          
+        </p>
+
+      </form>
+        
+
+    </div>
+
+    <br></br>
+</body>
+</html>
